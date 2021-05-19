@@ -1,0 +1,16 @@
+api = http://www.omdbapi.com/?i=tt3896198&apikey=b53624b3
+
+
+background=#30475e
+cards = #ececec
+navbar = #222831
+
+    // const options = {
+    //   method: "GET",
+    //   url: `https://imdb8.p.rapidapi.com/auto-complete`,
+    //   params: { q: `${searchTerm}` },
+    //   headers: {
+    //     "x-rapidapi-key": "3b65156790msh4af0b3e8cde7a81p13f5abjsn71ca1e482f03",
+    //     "x-rapidapi-host": "imdb8.p.rapidapi.com",
+    //   },
+    // };
