@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import MovieItem from "./MovieItem";
 import Navbar from "./Navbar";
 import Carousel from "./Carousel";
+import MovieData from "./MovieData";
 const Movielist = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [searchData, setSearchData] = useState([]);
@@ -11,7 +11,6 @@ const Movielist = () => {
     const data = await axios
       .get(url)
       .then((res) => {
-        // console.log("response", res.data.Search);
         setSearchData(res.data.Search);
       })
       .catch((err) => console.log(err));
@@ -28,12 +27,7 @@ const Movielist = () => {
     <div className="container">
       <Navbar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <Carousel />
-      <div className="row">
-        {searchData &&
-          searchData.map((movie) => {
-            return <MovieItem key={movie.imdbID} movieData={movie} />;
-          })}
-      </div>
+      <MovieData searchData={searchData} />
     </div>
   );
 };

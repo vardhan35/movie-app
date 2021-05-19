@@ -5,10 +5,12 @@ const MovieItem = ({ movieData }) => {
     <h1>Hello World</h1>;
   }
   return (
-    <div className="movie-item" key="">
-      <img src={movieData.Poster} alt="" />
-      <h2>{movieData.Title}</h2>
-    </div>
+    <a href="/details">
+      <div className="movie-item" key="">
+        <img src={movieData.Poster} alt="" />
+        <h2>{movieData.Title}</h2>
+      </div>
+    </a>
   );
 };
 

@@ -19,9 +19,8 @@
   display: block;
 }
 .row{
-  width: 100%;
+  width: 95%;
   margin: 1em auto;
-  display: inline-block;
   justify-content:center;
   align-items: center;
   -ms-overflow-style: none;
@@ -84,7 +83,7 @@
 .slider img{
   border-radius: 0.2em;
   width: 90%;
-  height: 400px;
+  height: 250px;
   margin:auto;
   object-fit: cover;
 }
