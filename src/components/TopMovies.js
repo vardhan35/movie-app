@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 const TopMovies = () => {
   const [searchData, setSearchData] = useState([]);
   const fetchMovies = async () => {
@@ -25,12 +26,12 @@ const TopMovies = () => {
       {searchData &&
         searchData.map((movie) => {
           return (
-            <a href="/details">
+            <Link to={"/" + movie.imdbID}>
               <div className="movie-item" key={movie.imdbID}>
                 <img src={movie.Poster} alt="" />
                 <h2>{movie.Title}</h2>
               </div>
-            </a>
+            </Link>
           );
         })}
     </div>

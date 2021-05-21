@@ -3,7 +3,8 @@ import axios from "axios";
 import Navbar from "./Navbar";
 import Carousel from "./Carousel";
 import MovieData from "./MovieData";
-const Movielist = () => {
+import TopMovies from "./TopMovies";
+const Home = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [searchData, setSearchData] = useState([]);
   const fetchMovies = async (searchTerm) => {
@@ -26,10 +27,16 @@ const Movielist = () => {
   return (
     <div className="container">
       <Navbar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-      <Carousel />
-      <MovieData searchData={searchData} />
+      {!searchTerm ? (
+        <div className="container_home">
+          <Carousel />
+          <TopMovies />
+        </div>
+      ) : (
+        <MovieData searchData={searchData} />
+      )}
     </div>
   );
 };
 
-export default Movielist;
+export default Home;

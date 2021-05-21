@@ -1,8 +1,7 @@
 import "./App.css";
-import Movielist from "./components/Movielist";
 import MovieDetails from "./components/MovieDetails";
+import Home from "./components/Home";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import TopMovies from "./components/TopMovies";
 
 function App() {
   return (
@@ -10,13 +9,10 @@ function App() {
       <div className="App">
         <Switch>
           <Route exact path="/">
-            <Movielist />
+            <Home />
           </Route>
-          <Route path="/details">
+          <Route path="/:id">
             <MovieDetails />
-          </Route>
-          <Route path="/top">
-            <TopMovies />
           </Route>
         </Switch>
       </div>
