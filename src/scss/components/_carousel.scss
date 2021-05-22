@@ -1,0 +1,31 @@
+.slick-slider{
+  margin: 100px auto 0.5em auto;
+  width: 80vw;
+
+  & img{
+    border-radius: 0.2em;
+    width: 80%;
+    height:250px;
+    margin:auto;
+    object-fit: cover;
+  }
+  & img:hover{
+    transform: scale(1.02);
+    transition: all 0.2 ease;
+  }
+}
+
+.slick{
+  &-prev{
+    margin-left: 50px;
+    z-index: 5;
+  }
+  &-next{
+    margin-right: 50px;
+    z-index: 5;
+  }
+  &-list{
+    width: 100%;
+    overflow: hidden;
+  }
+}
