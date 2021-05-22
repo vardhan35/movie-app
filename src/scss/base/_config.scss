@@ -1,0 +1,24 @@
+@import './variables';
+
+@function weight($weight-name){
+  @return map-get($font-weights, $weight-name)
+};
+
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:$direction;
+};
+
+@mixin mobile_md {
+  @media(max-width: $mobile){
+    @content;
+  }
+};
+
+@mixin tablet_md {
+  @media(max-width: $tablet){
+    @content;
+  }
+};

@@ -1,0 +1,341 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #222831;
+}
+
+.App {
+  margin: auto;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: block;
+  margin: auto;
+}
+
+.container_home {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  margin: auto;
+}
+
+.navbar {
+  width: 100vw;
+  height: 80px;
+  background-color: #30475e;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 6;
+}
+
+.navbar input {
+  height: 50px;
+  margin: auto;
+  border: none;
+  padding: 0 0.5em;
+  width: 70%;
+  color: #ececec;
+  font-size: 1.2rem;
+}
+
+.slick-slider {
+  margin: 100px auto 0.5em auto;
+  width: 80vw;
+}
+
+.slick-slider img {
+  border-radius: 0.2em;
+  width: 80%;
+  height: 250px;
+  margin: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slick-slider img:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: all 0.2 ease;
+  transition: all 0.2 ease;
+}
+
+.slick-prev {
+  margin-left: 50px;
+  z-index: 5;
+}
+
+.slick-next {
+  margin-right: 50px;
+  z-index: 5;
+}
+
+.slick-list {
+  width: 100%;
+  overflow: hidden;
+}
+
+.row {
+  width: 88%;
+  margin: 1em auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.row a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.row h1 {
+  color: #ececec;
+}
+
+.movie-item {
+  position: relative;
+  margin: 1em 1em;
+  background-color: #ececec;
+  height: 400px;
+  width: 235px;
+  cursor: pointer;
+  -webkit-box-shadow: 0 3 6px #ffffff;
+          box-shadow: 0 3 6px #ffffff;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -webkit-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.movie-item::before {
+  content: "";
+  border-radius: 5px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: 0 6 17px #222831;
+          box-shadow: 0 6 17px #222831;
+  opacity: 0;
+  -webkit-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.movie-item:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  z-index: 5;
+}
+
+.movie-item:hover::before {
+  opacity: 1;
+}
+
+.movie-item h2 {
+  background-color: #ececec;
+  margin: 0 1em 0 1em;
+  color: #222831;
+  font-size: 1rem;
+}
+
+.movie-item img {
+  width: 200px;
+  height: 300px;
+  margin: 1em;
+}
+
+.movie_data {
+  margin: 100px auto;
+}
+
+.container_details {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.details {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.details_img {
+  width: 30%;
+  text-align: center;
+}
+
+.details_img img {
+  width: 75%;
+  margin: auto;
+}
+
+.details_info {
+  padding: 0 0 0 1em;
+  border-left: 3px solid yellowgreen;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  margin: auto auto auto 2em;
+}
+
+.details_info p {
+  margin-top: 0.5em;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.details_info h1 {
+  margin-top: 2em;
+  color: #ffffff;
+  font-size: 3rem;
+}
+
+.details_info h3 {
+  margin-top: 0.5em;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.details_info h2 {
+  margin-top: 0.5em;
+  color: #ffffff;
+}
+
+.details_info button {
+  border-radius: 0.25em;
+  border: none;
+  height: 40px;
+  margin-top: 2em;
+  width: 200px;
+  background-color: yellowgreen;
+  color: #30475e;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.details_info button:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.details_info button a {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.info_title {
+  color: yellowgreen;
+}
+
+.App {
+  margin: auto;
+  height: 100vh;
+  width: 100%;
+}
+
+body {
+  background-color: #30475e;
+  font-weight: 400;
+}
+
+@media (max-width: 1024px) {
+  .slick-slider {
+    display: none;
+  }
+  .container_home {
+    margin: 100px auto;
+  }
+  .row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container_details {
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .details {
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .details_img {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .details_img img {
+    width: 100%;
+    margin: auto;
+  }
+  .details_info {
+    width: 90%;
+    border: none;
+    font-size: 0.5rem;
+    margin: 2em auto;
+    padding: 0;
+  }
+  .details_info h1 {
+    margin-top: 0.5em;
+    font-size: 2rem;
+  }
+  .details_info button {
+    margin: 1em auto;
+  }
+}
+/*# sourceMappingURL=main.css.map */
