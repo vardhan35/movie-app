@@ -93,7 +93,7 @@
 }
 
 .row {
-  width: 88%;
+  width: 100%;
   margin: 1em auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -172,6 +172,7 @@
 }
 
 .movie_data {
+  width: 90%;
   margin: 100px auto;
 }
 

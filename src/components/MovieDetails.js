@@ -27,7 +27,7 @@ const MovieDetails = () => {
     fetchMovies(id);
   }, [id]);
   return (
-    <div className="container_details query_details">
+    <div className="container_details">
       <div className="details query">
         {loading ? (
           <>
