@@ -8,7 +8,7 @@ const Home = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [searchData, setSearchData] = useState([]);
   const fetchMovies = async (searchTerm) => {
-    const url = `http://www.omdbapi.com/?s=${searchTerm}&apikey=b53624b3`;
+    const url = `https://www.omdbapi.com/?s=${searchTerm}&apikey=b53624b3`;
     const data = await axios
       .get(url)
       .then((res) => {

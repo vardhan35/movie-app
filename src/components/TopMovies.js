@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const TopMovies = () => {
   const [searchData, setSearchData] = useState([]);
   const fetchMovies = async () => {
-    const url = `http://www.omdbapi.com/?s=marvel&apikey=b53624b3`;
+    const url = `https://www.omdbapi.com/?s=marvel&apikey=b53624b3`;
     const data = await axios
       .get(url)
       .then((res) => {
