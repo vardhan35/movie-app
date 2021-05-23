@@ -9,7 +9,7 @@ const MovieDetails = () => {
   const [searchData, setSearchData] = useState([]);
 
   const fetchMovies = async (id) => {
-    const url = `http://www.omdbapi.com/?i=${id}&apikey=b53624b3`;
+    const url = `https://www.omdbapi.com/?i=${id}&apikey=b53624b3`;
     const data = await axios
       .get(url)
       .then((res) => {
