@@ -122,7 +122,7 @@
   margin: 1em 1em;
   background-color: #ececec;
   height: 400px;
-  width: 235px;
+  max-width: 235px;
   cursor: pointer;
   -webkit-box-shadow: 0 3 6px #ffffff;
           box-shadow: 0 3 6px #ffffff;
